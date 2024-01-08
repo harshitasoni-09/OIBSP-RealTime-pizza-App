@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealTime pizza app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100&family=Play:wght@700&family=Poppins:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+
+<body class="font-lato antialiased text-gray-900">
+
+    <nav class="container mx-auto flex items-center justify-between py-4">
+        <div>
+            <img src="https://th.bing.com/th/id/R.d149940ba70c191927875f0c68825c42?rik=lBf12svBCUCEyQ&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fniX%2f6pE%2fniX6pEo8T.png&ehk=MgR19iRbvhmtAZf7f14T8YisU4E4WlTZGOcL8enppPg%3d&risl=&pid=ImgRaw&r=0"
+                alt="logo" style="height: 90px; width: 100px; margin-left: 5px;">
+        </div>
+        <div>
+            <ul class="flex items-center space-x-6 hover:text-red">
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Offers</a></li>
+                <% if(user) { %>
+                <li><a href="/logout">Logout</a></li>
+                <% } else { %>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/login">Login</a></li>
+                <% } %>
+                <li><a href="/cart">
+                    <span id="cartCounter" style="position: absolute; background-color: red; color: white; padding: 10px; border-radius: 40%;"><%- session.cart ? session.cart.totalQty: ''  %></span>
+                    
+                    <img src="https://i.etsystatic.com/10919371/r/il/08e506/1529874052/il_fullxfull.1529874052_1xc2.jpg"
+                            style="height: 35px; width: 50px; margin-right: 2px;" alt="cart"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <%- body%>
+    <footer></footer>
+
+  <script src="/js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.js"></script>
+
+</body>
+
+</html>

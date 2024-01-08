@@ -1,0 +1,72 @@
+[{
+  "_id": {
+    "$oid": "658c75f4d68993f56c26beaf"
+  },
+  "name": "Margherita",
+  "image": "pizza.webp",
+  "price": "350",
+  "size": "small"
+},
+{
+  "_id": {
+    "$oid": "658c75f4d68993f56c26beb0"
+  },
+  "name": "Marinara",
+  "image": "pizza.webp",
+  "price": "300",
+  "size": "medium"
+},
+{
+  "_id": {
+    "$oid": "658c75f4d68993f56c26beb1"
+  },
+  "name": "Carbonara",
+  "image": "pizza.webp",
+  "price": "300",
+  "size": "medium"
+},
+{
+  "_id": {
+    "$oid": "658c75f4d68993f56c26beb2"
+  },
+  "name": "Americana",
+  "image": "pizza.webp",
+  "price": "350",
+  "size": "small"
+},
+{
+  "_id": {
+    "$oid": "658c75f4d68993f56c26beb3"
+  },
+  "name": "Chicken Mushroom",
+  "image": "pizza.webp",
+  "price": "350",
+  "size": "small"
+},
+{
+  "_id": {
+    "$oid": "658c75f4d68993f56c26beb4"
+  },
+  "name": "Paneer Pizza",
+  "image": "pizza.webp",
+  "price": "350",
+  "size": "small"
+},
+{
+  "_id": {
+    "$oid": "658c75f4d68993f56c26beb5"
+  },
+  "name": "Veggies Pizza",
+  "image": "pizza.webp",
+  "price": "350",
+  "size": "small"
+},
+{
+  "_id": {
+    "$oid": "658c75f4d68993f56c26beb6"
+  },
+  "name": "Pepperoni",
+  "image": "pizza.webp",
+  "price": "350",
+  "size": "small"
+}]
